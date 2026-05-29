@@ -29,7 +29,7 @@ jobs:
 
       - name: Run model updater
         env:
-          OPENCODE_ENV: ${{ secrets.OPENCODE_API_KEY }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
         run: bun run scripts/update-json.ts
 
       - name: Check for changes
