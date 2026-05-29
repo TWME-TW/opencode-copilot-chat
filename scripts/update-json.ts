@@ -104,9 +104,9 @@ if (await exists(modelDir)) {
       null,
       2,
     );
-    await file(join(modelDir, `${provider.name}.json`)).write(
-      fileContent.substring(1, fileContent.length - 1),
-    );
+    await file(
+      join(modelDir, `${provider.name.toLowerCase().replace(/ /g, '-')}.json`),
+    ).write(fileContent.substring(1, fileContent.length - 1));
   }
   if (providorModelInfo.map((provider) => provider.models).flat().length > 0) {
     const fileContent = JSON.stringify(
