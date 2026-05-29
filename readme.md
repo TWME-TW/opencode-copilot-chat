@@ -12,7 +12,10 @@ This project provides a guide and settings JSON to add opencode's models to your
 
 👉 [Follow the step-by-step guide](/GUIDE.md)
 
-📄 [Model Settings JSON](/model-settings.json)
+� [Browse Models List](/models/) (Get auto-generated configurations for all model types here)
+📄 [Model Settings JSON (All-in-one)](/models/all.json)
+
+📄 [Model Settings JSON (With Providor Info)](/model-settings.json)
 
 ## Automated Updates
 

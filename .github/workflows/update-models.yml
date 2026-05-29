@@ -38,7 +38,7 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet -- model-settings.json; then
+          if git diff --quiet -- model-settings.json models/; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -49,8 +49,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add model-settings.json
-          git commit -m "chore: update model-settings.json"
+          git add model-settings.json models/
+          git commit -m "chore: update models"
           git push
 
       - name: Print summary
@@ -59,7 +59,7 @@ jobs:
           echo "### Model Updates Detected! 🔄" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`diff" >> $GITHUB_STEP_SUMMARY
-          git diff HEAD~1 -- model-settings.json >> $GITHUB_STEP_SUMMARY
+          git diff HEAD~1 -- model-settings.json models/ >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
 
       - name: No changes summary
