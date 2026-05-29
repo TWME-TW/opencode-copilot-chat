@@ -5,6 +5,8 @@ import type {
   ProvidorInfo,
 } from './type';
 import { file } from 'bun';
+import { exists } from 'fs/promises';
+import { join } from 'path';
 
 const openCodeSessionKey = process.env.OPENCODE_API_KEY;
 
@@ -87,10 +89,36 @@ const newFileJsonFormat = providorModelInfo.map((provider) => {
   };
 });
 
-console.log(JSON.stringify(newFileJsonFormat, null, 2));
-
-const newFileContent = JSON.stringify(newFileJsonFormat, null, 2);
+const jsonString = JSON.stringify(newFileJsonFormat, null, 2);
+const newFileContent = ',' + jsonString.substring(1, jsonString.length - 1);
 
 await file('./model-settings.json').write(newFileContent);
+
+const modelDir = './models';
+
+if (await exists(modelDir)) {
+  for (const provider of providorModelInfo) {
+    await file(join(modelDir, `${provider.name}.json`)).write(
+      JSON.stringify(
+        {
+          models: provider.models,
+        },
+        null,
+        2,
+      ),
+    );
+  }
+  if (providorModelInfo.map((provider) => provider.models).flat().length > 0) {
+    await file(join(modelDir, 'all.json')).write(
+      JSON.stringify(
+        {
+          models: providorModelInfo.map((provider) => provider.models).flat(),
+        },
+        null,
+        2,
+      ),
+    );
+  }
+}
 
 process.exit(0);
