@@ -4,7 +4,7 @@
 
 This project provides a guide and settings JSON to add opencode's models to your Copilot Chat.
 
-> **Note:** Currently only opencode Go plan's models have been tested. Other plans' models haven't been tested yet.
+> **Note:** Currently only opencode Go plan's models have been tested and included.
 
 ## Requirement
 
