@@ -6,7 +6,24 @@ import type {
 } from './type';
 import { file } from 'bun';
 
+const openCodeSessionKey = process.env.OPENCODE_API_KEY;
+
+if (!openCodeSessionKey) {
+  console.error('OPENCODE_API_KEY environment variable is not set');
+  process.exit(1);
+}
+
 const openCode = await createOpencode();
+
+openCode.client.auth.set({
+  path: {
+    id: 'opencode',
+  },
+  body: {
+    type: 'api',
+    key: openCodeSessionKey,
+  },
+});
 
 const providors = await openCode.client.config.providers();
 
@@ -18,6 +35,10 @@ const npmPackageToApiTypeMap: Record<string, VSCodeModelsInfo['apiType']> = {
   '@ai-sdk/openai-compatible': 'chat-completions',
   '@ai-sdk/anthropic': 'messages',
 };
+
+process.on('exit', () => {
+  openCode.server.close();
+});
 
 if (!providors.data || !providors.data.providers) {
   console.error('No providers found');

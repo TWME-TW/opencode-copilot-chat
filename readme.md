@@ -14,6 +14,8 @@ This project provides a guide and settings JSON to add opencode's models to your
 
 👉 [Follow the step-by-step guide](/GUIDE.md)
 
+📄 [Model Settings JSON](/model-settings.json)
+
 ## Reference
 
 - [VS Code Language Model Configuration Reference](https://code.visualstudio.com/docs/copilot/customization/language-models#_model-configuration-reference) — Official documentation for model configuration in VS Code Copilot Chat.
