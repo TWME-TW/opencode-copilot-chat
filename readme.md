@@ -10,20 +10,27 @@ This project provides a guide and settings JSON to add opencode's models to your
 
 ## Quick Start
 
-👉 [Follow the step-by-step guide](/GUIDE.md)
+- 📄 [Browse Models List](/models/) — Get auto-generated configurations for all model types here
+- 📄 [Model Settings JSON (All-in-one)](/models/all.json)
+- 📄 [Model Settings JSON (With Provider Info)](/model-settings.json)
+- 👉 [Follow the step-by-step guide](/GUIDE.md)
 
-📄 [Browse Models List](/models/) (Get auto-generated configurations for all model types here)
-📄 [Model Settings JSON (All-in-one)](/models/all.json)
+**GIF Guide:**
 
-📄 [Model Settings JSON (With Provider Info)](/model-settings.json)
+![An GIF Guide](/assets/media/guide.gif)
+
+[📹 Video Version](/assets/media/guide.mp4)
 
 ## VSCode Configuration
 
-- [chat.exploreAgent.defaultModel](vscode://settings/chat.exploreAgent.defaultModel): Select the default language model to use for the Explore subagent from the available providers.
+- **[chat.exploreAgent.defaultModel](vscode://settings/chat.exploreAgent.defaultModel)**  
+  Select the default language model to use for the Explore subagent from the available providers.
 
-- [chat.utilityModel](vscode://settings/chat.utilityModel): Override the language model used by built-in utility flows. Leave empty to use the default model.
+- **[chat.utilityModel](vscode://settings/chat.utilityModel)**  
+  Override the language model used by built-in utility flows. Leave empty to use the default model.
 
-- [chat.utilitySmallModel](vscode://settings/chat.utilitySmallModel): Override the language model used by built-in small/fast utility flows. A fast and inexpensive model is recommended. Leave empty to use the default model.
+- **[chat.utilitySmallModel](vscode://settings/chat.utilitySmallModel)**  
+  Override the language model used by built-in small/fast utility flows. A fast and inexpensive model is recommended. Leave empty to use the default model.
 
 ## Automated Updates
 
