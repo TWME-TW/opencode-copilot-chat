@@ -5,7 +5,7 @@ import type {
   ProvidorInfo,
 } from './type';
 import { file } from 'bun';
-import { exists } from 'fs/promises';
+import { exists, mkdir } from 'fs/promises';
 import { join } from 'path';
 
 const openCodeSessionKey = process.env.OPENCODE_API_KEY;
@@ -90,7 +90,6 @@ const providorModelInfo: ProvidorInfo[] = providors.data.providers
     }
     const models = Object.entries(provider.models).map(
       ([modelId, model]: [string, ExtenedModelInfoType]) => {
-        console.log(modelId);
         return {
           id: modelId,
           name: model.name,
@@ -133,53 +132,55 @@ await file('./model-settings.json').write(
 
 const modelDir = './models';
 
-if (await exists(modelDir)) {
-  for (const provider of providorModelInfo) {
+if (!(await exists(modelDir))) {
+  await mkdir(modelDir);
+}
+
+for (const provider of providorModelInfo) {
+  const fileContent = JSON.stringify(
+    {
+      models: provider.models,
+    },
+    null,
+    2,
+  );
+  await file(
+    join(modelDir, `${provider.name.toLowerCase().replace(/ /g, '-')}.json`),
+  ).write(fileContent.substring(1, fileContent.length - 1));
+}
+if (providorModelInfo.map((provider) => provider.models).flat().length > 0) {
+  const fileContent = JSON.stringify(
+    {
+      models: providorModelInfo.map((provider) => provider.models).flat(),
+    },
+    null,
+    2,
+  );
+  await file(join(modelDir, 'all.json')).write(
+    fileContent.substring(1, fileContent.length - 1),
+  );
+}
+if (zenFreeModelsId.length > 0) {
+  const providorZen = (providorModelInfo
+    .filter((provider) => provider.name.includes('Zen'))
+    .flat() || [])[0];
+  if (!providorZen) {
+    console.error('Zen provider not found, skipping Zen Free models update');
+  } else {
+    const zenModels = providorZen.models;
+    const zenFreeModelInfo: VSCodeModelsInfo[] = zenModels.filter((model) =>
+      zenFreeModelsId.includes(model.id),
+    );
     const fileContent = JSON.stringify(
       {
-        models: provider.models,
+        models: zenFreeModelInfo,
       },
       null,
       2,
     );
-    await file(
-      join(modelDir, `${provider.name.toLowerCase().replace(/ /g, '-')}.json`),
-    ).write(fileContent.substring(1, fileContent.length - 1));
-  }
-  if (providorModelInfo.map((provider) => provider.models).flat().length > 0) {
-    const fileContent = JSON.stringify(
-      {
-        models: providorModelInfo.map((provider) => provider.models).flat(),
-      },
-      null,
-      2,
-    );
-    await file(join(modelDir, 'all.json')).write(
+    await file(join(modelDir, 'zen-free.json')).write(
       fileContent.substring(1, fileContent.length - 1),
     );
-  }
-  if (zenFreeModelsId.length > 0) {
-    const providorZen = (providorModelInfo
-      .filter((provider) => provider.name === 'Zen')
-      .flat() || [])[0];
-    if (!providorZen) {
-      console.error('Zen provider not found, skipping Zen Free models update');
-    } else {
-      const zenModels = providorZen.models;
-      const zenFreeModelInfo: VSCodeModelsInfo[] = zenModels.filter((model) =>
-        zenFreeModelsId.includes(model.id),
-      );
-      const fileContent = JSON.stringify(
-        {
-          models: zenFreeModelInfo,
-        },
-        null,
-        2,
-      );
-      await file(join(modelDir, 'zen-free.json')).write(
-        fileContent.substring(1, fileContent.length - 1),
-      );
-    }
   }
 }
 
