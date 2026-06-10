@@ -9,7 +9,11 @@
       "vision": true,
       "thinking": true,
       "maxInputTokens": 512000,
-      "maxOutputTokens": 131072
+      "maxOutputTokens": 131072,
+      "supportsReasoningEffort": [
+        "none",
+        "thinking"
+      ]
     },
     {
       "id": "kimi-k2.6",
@@ -474,6 +478,24 @@
       ]
     },
     {
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "messages",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 128000,
+      "supportsReasoningEffort": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    },
+    {
       "id": "gemini-3-flash",
       "name": "Gemini 3 Flash",
       "url": "https://opencode.ai/zen/v1",
@@ -826,6 +848,21 @@
         "high",
         "xhigh",
         "max"
+      ]
+    },
+    {
+      "id": "north-mini-code-free",
+      "name": "North Mini Code Free",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": false,
+      "thinking": true,
+      "maxInputTokens": 256000,
+      "maxOutputTokens": 64000,
+      "supportsReasoningEffort": [
+        "none",
+        "high"
       ]
     },
     {
