@@ -11,8 +11,6 @@
       "maxInputTokens": 1000000,
       "maxOutputTokens": 384000,
       "supportsReasoningEffort": [
-        "low",
-        "medium",
         "high",
         "max"
       ]
@@ -37,12 +35,7 @@
       "vision": true,
       "thinking": true,
       "maxInputTokens": 200000,
-      "maxOutputTokens": 32000,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "high"
-      ]
+      "maxOutputTokens": 32000
     },
     {
       "id": "nemotron-3-ultra-free",
@@ -53,12 +46,7 @@
       "vision": false,
       "thinking": true,
       "maxInputTokens": 1000000,
-      "maxOutputTokens": 128000,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "high"
-      ]
+      "maxOutputTokens": 128000
     },
     {
       "id": "gemini-3-flash",
@@ -88,8 +76,6 @@
       "maxInputTokens": 200000,
       "maxOutputTokens": 128000,
       "supportsReasoningEffort": [
-        "low",
-        "medium",
         "high",
         "max"
       ]
@@ -192,8 +178,6 @@
       "maxInputTokens": 1000000,
       "maxOutputTokens": 384000,
       "supportsReasoningEffort": [
-        "low",
-        "medium",
         "high",
         "max"
       ]
@@ -291,11 +275,7 @@
       "vision": true,
       "thinking": true,
       "maxInputTokens": 512000,
-      "maxOutputTokens": 128000,
-      "supportsReasoningEffort": [
-        "none",
-        "thinking"
-      ]
+      "maxOutputTokens": 128000
     },
     {
       "id": "gpt-5.1-codex",
@@ -324,7 +304,6 @@
       "maxInputTokens": 128000,
       "maxOutputTokens": 128000,
       "supportsReasoningEffort": [
-        "none",
         "low",
         "medium",
         "high",
@@ -375,7 +354,11 @@
       "vision": true,
       "thinking": true,
       "maxInputTokens": 262144,
-      "maxOutputTokens": 65536
+      "maxOutputTokens": 65536,
+      "supportsReasoningEffort": [
+        "high",
+        "max"
+      ]
     },
     {
       "id": "gpt-5.2",
@@ -470,7 +453,8 @@
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ]
     },
     {
@@ -530,7 +514,8 @@
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ]
     },
     {
@@ -560,12 +545,7 @@
       "vision": false,
       "thinking": true,
       "maxInputTokens": 190000,
-      "maxOutputTokens": 64000,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "high"
-      ]
+      "maxOutputTokens": 64000
     },
     {
       "id": "claude-haiku-4-5",
@@ -765,7 +745,8 @@
         "low",
         "medium",
         "high",
-        "xhigh"
+        "xhigh",
+        "max"
       ]
     },
     {
@@ -810,7 +791,11 @@
       "vision": true,
       "thinking": true,
       "maxInputTokens": 262144,
-      "maxOutputTokens": 65536
+      "maxOutputTokens": 65536,
+      "supportsReasoningEffort": [
+        "high",
+        "max"
+      ]
     },
     {
       "id": "grok-build-0.1",
@@ -821,12 +806,7 @@
       "vision": true,
       "thinking": true,
       "maxInputTokens": 256000,
-      "maxOutputTokens": 256000,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "high"
-      ]
+      "maxOutputTokens": 256000
     },
     {
       "id": "gpt-5.1",
