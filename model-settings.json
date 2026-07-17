@@ -888,6 +888,20 @@
         "maxOutputTokens": 128000
       },
       {
+        "id": "kimi-k3",
+        "name": "Kimi K3",
+        "url": "https://opencode.ai/zen/go/v1",
+        "apiType": "chat-completions",
+        "toolCalling": true,
+        "vision": true,
+        "thinking": true,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 131072,
+        "supportsReasoningEffort": [
+          "max"
+        ]
+      },
+      {
         "id": "deepseek-v4-flash",
         "name": "DeepSeek V4 Flash",
         "url": "https://opencode.ai/zen/go/v1",
@@ -900,6 +914,22 @@
         "supportsReasoningEffort": [
           "high",
           "max"
+        ]
+      },
+      {
+        "id": "grok-4.5",
+        "name": "Grok 4.5",
+        "url": "https://opencode.ai/zen/go/v1",
+        "apiType": "chat-completions",
+        "toolCalling": true,
+        "vision": true,
+        "thinking": true,
+        "maxInputTokens": 500000,
+        "maxOutputTokens": 500000,
+        "supportsReasoningEffort": [
+          "low",
+          "medium",
+          "high"
         ]
       },
       {
