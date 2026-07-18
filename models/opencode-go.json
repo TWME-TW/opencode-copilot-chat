@@ -35,7 +35,7 @@
     },
     {
       "id": "kimi-k3",
-      "name": "Kimi K3",
+      "name": "Kimi K3 (2x usage)",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "chat-completions",
       "toolCalling": true,
