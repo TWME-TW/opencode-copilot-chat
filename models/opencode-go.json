@@ -1,67 +1,30 @@
 
   "models": [
     {
-      "id": "mimo-v2.5-pro",
-      "name": "MiMo V2.5 Pro",
+      "id": "qwen3.7-plus",
+      "name": "Qwen3.7 Plus",
       "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 1048576,
-      "maxOutputTokens": 128000
-    },
-    {
-      "id": "kimi-k2.7-code",
-      "name": "Kimi K2.7 Code",
-      "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": true,
-      "thinking": true,
-      "maxInputTokens": 262144,
-      "maxOutputTokens": 262144
-    },
-    {
-      "id": "hy3",
-      "name": "Hy3",
-      "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 256000,
-      "maxOutputTokens": 64000,
-      "supportsReasoningEffort": [
-        "none",
-        "low",
-        "high"
-      ]
-    },
-    {
-      "id": "mimo-v2.5",
-      "name": "MiMo V2.5",
-      "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "chat-completions",
+      "apiType": "messages",
       "toolCalling": true,
       "vision": true,
       "thinking": true,
       "maxInputTokens": 1000000,
-      "maxOutputTokens": 128000
+      "maxOutputTokens": 65536,
+      "supportsReasoningEffort": [
+        "high",
+        "max"
+      ]
     },
     {
-      "id": "kimi-k3",
-      "name": "Kimi K3 (2x usage)",
+      "id": "glm-5.1",
+      "name": "GLM-5.1",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "chat-completions",
       "toolCalling": true,
-      "vision": true,
+      "vision": false,
       "thinking": true,
-      "maxInputTokens": 1048576,
-      "maxOutputTokens": 131072,
-      "supportsReasoningEffort": [
-        "max"
-      ]
+      "maxInputTokens": 202752,
+      "maxOutputTokens": 32768
     },
     {
       "id": "deepseek-v4-flash",
@@ -79,57 +42,26 @@
       ]
     },
     {
-      "id": "grok-4.5",
-      "name": "Grok 4.5",
-      "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": true,
-      "thinking": true,
-      "maxInputTokens": 500000,
-      "maxOutputTokens": 500000,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "high"
-      ]
-    },
-    {
-      "id": "kimi-k2.6",
-      "name": "Kimi K2.6",
-      "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": true,
-      "thinking": true,
-      "maxInputTokens": 262144,
-      "maxOutputTokens": 65536
-    },
-    {
-      "id": "qwen3.7-plus",
-      "name": "Qwen3.7 Plus",
+      "id": "minimax-m2.7",
+      "name": "MiniMax-M2.7",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "messages",
       "toolCalling": true,
-      "vision": true,
+      "vision": false,
       "thinking": true,
-      "maxInputTokens": 1000000,
-      "maxOutputTokens": 65536,
-      "supportsReasoningEffort": [
-        "high",
-        "max"
-      ]
+      "maxInputTokens": 204800,
+      "maxOutputTokens": 131072
     },
     {
-      "id": "deepseek-v4-pro",
-      "name": "DeepSeek V4 Pro",
+      "id": "glm-5.2",
+      "name": "GLM-5.2",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "chat-completions",
       "toolCalling": true,
       "vision": false,
       "thinking": true,
       "maxInputTokens": 1000000,
-      "maxOutputTokens": 384000,
+      "maxOutputTokens": 131072,
       "supportsReasoningEffort": [
         "high",
         "max"
@@ -151,34 +83,15 @@
       ]
     },
     {
-      "id": "qwen3.6-plus",
-      "name": "Qwen3.6 Plus",
-      "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "messages",
-      "toolCalling": true,
-      "vision": true,
-      "thinking": true,
-      "maxInputTokens": 1000000,
-      "maxOutputTokens": 65536,
-      "supportsReasoningEffort": [
-        "high",
-        "max"
-      ]
-    },
-    {
-      "id": "glm-5.2",
-      "name": "GLM-5.2",
+      "id": "kimi-k2.6",
+      "name": "Kimi K2.6",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "chat-completions",
       "toolCalling": true,
-      "vision": false,
+      "vision": true,
       "thinking": true,
-      "maxInputTokens": 1000000,
-      "maxOutputTokens": 131072,
-      "supportsReasoningEffort": [
-        "high",
-        "max"
-      ]
+      "maxInputTokens": 262144,
+      "maxOutputTokens": 65536
     },
     {
       "id": "minimax-m3",
@@ -196,25 +109,112 @@
       ]
     },
     {
-      "id": "glm-5.1",
-      "name": "GLM-5.1",
+      "id": "hy3",
+      "name": "Hy3",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "chat-completions",
       "toolCalling": true,
       "vision": false,
       "thinking": true,
-      "maxInputTokens": 202752,
-      "maxOutputTokens": 32768
+      "maxInputTokens": 256000,
+      "maxOutputTokens": 64000,
+      "supportsReasoningEffort": [
+        "none",
+        "low",
+        "high"
+      ]
     },
     {
-      "id": "minimax-m2.7",
-      "name": "MiniMax-M2.7",
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
       "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "messages",
+      "apiType": "chat-completions",
       "toolCalling": true,
       "vision": false,
       "thinking": true,
-      "maxInputTokens": 204800,
-      "maxOutputTokens": 131072
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 384000,
+      "supportsReasoningEffort": [
+        "high",
+        "max"
+      ]
+    },
+    {
+      "id": "mimo-v2.5",
+      "name": "MiMo V2.5",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 128000
+    },
+    {
+      "id": "grok-4.5",
+      "name": "Grok 4.5",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 500000,
+      "maxOutputTokens": 500000,
+      "supportsReasoningEffort": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    {
+      "id": "kimi-k2.7-code",
+      "name": "Kimi K2.7 Code",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 262144,
+      "maxOutputTokens": 262144
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3 (2x usage)",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1048576,
+      "maxOutputTokens": 131072,
+      "supportsReasoningEffort": [
+        "max"
+      ]
+    },
+    {
+      "id": "mimo-v2.5-pro",
+      "name": "MiMo V2.5 Pro",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": false,
+      "thinking": true,
+      "maxInputTokens": 1048576,
+      "maxOutputTokens": 128000
+    },
+    {
+      "id": "qwen3.6-plus",
+      "name": "Qwen3.6 Plus",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "messages",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 65536,
+      "supportsReasoningEffort": [
+        "high",
+        "max"
+      ]
     }
   ]
