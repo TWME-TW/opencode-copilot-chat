@@ -980,6 +980,20 @@
         "maxOutputTokens": 256000
       },
       {
+        "id": "kimi-k3",
+        "name": "Kimi K3",
+        "url": "https://opencode.ai/zen/v1",
+        "apiType": "chat-completions",
+        "toolCalling": true,
+        "vision": true,
+        "thinking": true,
+        "maxInputTokens": 1048576,
+        "maxOutputTokens": 131072,
+        "supportsReasoningEffort": [
+          "max"
+        ]
+      },
+      {
         "id": "gpt-5.1-codex",
         "name": "GPT-5.1 Codex",
         "url": "https://opencode.ai/zen/v1",
