@@ -32,7 +32,7 @@
       },
       {
         "id": "deepseek-v4-flash",
-        "name": "DeepSeek V4 Flash",
+        "name": "DeepSeek V4 Flash (New)",
         "url": "https://opencode.ai/zen/go/v1",
         "apiType": "chat-completions",
         "toolCalling": true,
@@ -155,6 +155,25 @@
         "maxOutputTokens": 128000
       },
       {
+        "id": "gpt-5.6-luna",
+        "name": "GPT-5.6 Luna (2x usage)",
+        "url": "https://opencode.ai/zen/go/v1",
+        "apiType": "chat-completions",
+        "toolCalling": true,
+        "vision": true,
+        "thinking": true,
+        "maxInputTokens": 1050000,
+        "maxOutputTokens": 128000,
+        "supportsReasoningEffort": [
+          "none",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      {
         "id": "grok-4.5",
         "name": "Grok 4.5",
         "url": "https://opencode.ai/zen/go/v1",
@@ -183,7 +202,7 @@
       },
       {
         "id": "kimi-k3",
-        "name": "Kimi K3 (2x usage)",
+        "name": "Kimi K3",
         "url": "https://opencode.ai/zen/go/v1",
         "apiType": "chat-completions",
         "toolCalling": true,
@@ -585,7 +604,7 @@
       },
       {
         "id": "deepseek-v4-flash-free",
-        "name": "DeepSeek V4 Flash Free",
+        "name": "DeepSeek V4 Flash Free (New)",
         "url": "https://opencode.ai/zen/v1",
         "apiType": "chat-completions",
         "toolCalling": true,
