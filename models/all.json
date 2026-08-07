@@ -687,21 +687,6 @@
       ]
     },
     {
-      "id": "claude-opus-4-1",
-      "name": "Claude Opus 4.1",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "messages",
-      "toolCalling": true,
-      "vision": true,
-      "thinking": true,
-      "maxInputTokens": 200000,
-      "maxOutputTokens": 32000,
-      "supportsReasoningEffort": [
-        "high",
-        "max"
-      ]
-    },
-    {
       "id": "minimax-m3",
       "name": "MiniMax-M3",
       "url": "https://opencode.ai/zen/v1",
