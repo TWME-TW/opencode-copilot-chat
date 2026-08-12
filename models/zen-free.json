@@ -1,21 +1,6 @@
 
   "models": [
     {
-      "id": "north-mini-code-free",
-      "name": "North Mini Code Free",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 256000,
-      "maxOutputTokens": 64000,
-      "supportsReasoningEffort": [
-        "none",
-        "high"
-      ]
-    },
-    {
       "id": "longcat-2.0-free",
       "name": "LongCat-2.0 Free",
       "url": "https://opencode.ai/zen/v1",
@@ -75,6 +60,22 @@
       "maxOutputTokens": 32768
     },
     {
+      "id": "hy3-free",
+      "name": "Hy3 Free",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": false,
+      "thinking": true,
+      "maxInputTokens": 190000,
+      "maxOutputTokens": 64000,
+      "supportsReasoningEffort": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    {
       "id": "mimo-v2.5-free",
       "name": "MiMo V2.5 Free",
       "url": "https://opencode.ai/zen/v1",
@@ -95,6 +96,17 @@
       "thinking": true,
       "maxInputTokens": 200000,
       "maxOutputTokens": 32000
+    },
+    {
+      "id": "nemotron-3.5-lightning-free",
+      "name": "Nemotron 3.5 Lightning Free",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": false,
+      "thinking": true,
+      "maxInputTokens": 262144,
+      "maxOutputTokens": 262144
     },
     {
       "id": "nemotron-3-ultra-free",
