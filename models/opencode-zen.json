@@ -188,6 +188,22 @@
       ]
     },
     {
+      "id": "gemini-3.7-flash",
+      "name": "Gemini 3.7 Flash",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1048576,
+      "maxOutputTokens": 65536,
+      "supportsReasoningEffort": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    {
       "id": "claude-opus-4-6",
       "name": "Claude Opus 4.6",
       "url": "https://opencode.ai/zen/v1",
@@ -460,17 +476,6 @@
         "high",
         "max"
       ]
-    },
-    {
-      "id": "ling-3.0-tiny-free",
-      "name": "Ling-3.0-tiny Free",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 262144,
-      "maxOutputTokens": 32768
     },
     {
       "id": "gpt-5.4",
