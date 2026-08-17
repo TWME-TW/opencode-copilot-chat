@@ -15,16 +15,12 @@
       "id": "qwen3.7-max",
       "name": "Qwen3.7 Max",
       "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "messages",
+      "apiType": "chat-completions",
       "toolCalling": true,
       "vision": false,
       "thinking": true,
       "maxInputTokens": 1000000,
-      "maxOutputTokens": 65536,
-      "supportsReasoningEffort": [
-        "high",
-        "max"
-      ]
+      "maxOutputTokens": 65536
     },
     {
       "id": "kimi-k3",
@@ -42,7 +38,7 @@
     },
     {
       "id": "deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash (2x usage)",
+      "name": "DeepSeek V4 Flash",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "chat-completions",
       "toolCalling": true,
@@ -147,31 +143,23 @@
       "id": "qwen3.8-max",
       "name": "Qwen3.8 Max",
       "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "messages",
+      "apiType": "chat-completions",
       "toolCalling": true,
       "vision": true,
       "thinking": true,
       "maxInputTokens": 1000000,
-      "maxOutputTokens": 131072,
-      "supportsReasoningEffort": [
-        "high",
-        "max"
-      ]
+      "maxOutputTokens": 131072
     },
     {
       "id": "qwen3.7-plus",
       "name": "Qwen3.7 Plus",
       "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "messages",
+      "apiType": "chat-completions",
       "toolCalling": true,
       "vision": true,
       "thinking": true,
       "maxInputTokens": 1000000,
-      "maxOutputTokens": 65536,
-      "supportsReasoningEffort": [
-        "high",
-        "max"
-      ]
+      "maxOutputTokens": 65536
     },
     {
       "id": "glm-5.3",
@@ -208,16 +196,12 @@
       "id": "qwen3.6-plus",
       "name": "Qwen3.6 Plus",
       "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "messages",
+      "apiType": "chat-completions",
       "toolCalling": true,
       "vision": true,
       "thinking": true,
       "maxInputTokens": 1000000,
-      "maxOutputTokens": 65536,
-      "supportsReasoningEffort": [
-        "high",
-        "max"
-      ]
+      "maxOutputTokens": 65536
     },
     {
       "id": "glm-5.1",
