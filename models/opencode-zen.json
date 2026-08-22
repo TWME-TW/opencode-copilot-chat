@@ -104,22 +104,6 @@
       ]
     },
     {
-      "id": "deepseek-v4-flash-free",
-      "name": "DeepSeek V4 Flash Free",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 200000,
-      "maxOutputTokens": 128000,
-      "supportsReasoningEffort": [
-        "low",
-        "high",
-        "max"
-      ]
-    },
-    {
       "id": "claude-opus-4-8",
       "name": "Claude Opus 4.8",
       "url": "https://opencode.ai/zen/v1",
@@ -480,6 +464,22 @@
         "medium",
         "high",
         "xhigh"
+      ]
+    },
+    {
+      "id": "x-preview-f-free",
+      "name": "Ox Alpha Free (Unlimited)",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 131072,
+      "supportsReasoningEffort": [
+        "low",
+        "high",
+        "max"
       ]
     },
     {

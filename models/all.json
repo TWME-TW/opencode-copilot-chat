@@ -162,6 +162,22 @@
       "maxOutputTokens": 65536
     },
     {
+      "id": "ox-alpha-free",
+      "name": "Ox Alpha Free (Unlimited)",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 131072,
+      "supportsReasoningEffort": [
+        "low",
+        "high",
+        "max"
+      ]
+    },
+    {
       "id": "glm-5.3",
       "name": "GLM-5.3",
       "url": "https://opencode.ai/zen/go/v1",
@@ -271,6 +287,22 @@
       "maxOutputTokens": 65536
     },
     {
+      "id": "deepseek-v4-flash-vision-exp",
+      "name": "DeepSeek V4 Flash Vision Exp",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 384000,
+      "supportsReasoningEffort": [
+        "low",
+        "high",
+        "max"
+      ]
+    },
+    {
       "id": "claude-opus-4-7",
       "name": "Claude Opus 4.7",
       "url": "https://opencode.ai/zen/v1",
@@ -367,22 +399,6 @@
       "thinking": true,
       "maxInputTokens": 1000000,
       "maxOutputTokens": 384000,
-      "supportsReasoningEffort": [
-        "low",
-        "high",
-        "max"
-      ]
-    },
-    {
-      "id": "deepseek-v4-flash-free",
-      "name": "DeepSeek V4 Flash Free",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 200000,
-      "maxOutputTokens": 128000,
       "supportsReasoningEffort": [
         "low",
         "high",
@@ -750,6 +766,22 @@
         "medium",
         "high",
         "xhigh"
+      ]
+    },
+    {
+      "id": "x-preview-f-free",
+      "name": "Ox Alpha Free (Unlimited)",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 131072,
+      "supportsReasoningEffort": [
+        "low",
+        "high",
+        "max"
       ]
     },
     {
