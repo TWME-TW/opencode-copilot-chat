@@ -209,6 +209,22 @@
       ]
     },
     {
+      "id": "longcat-2.0",
+      "name": "LongCat-2.0",
+      "url": "https://opencode.ai/zen/go/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": false,
+      "thinking": true,
+      "maxInputTokens": 1000000,
+      "maxOutputTokens": 131072,
+      "supportsReasoningEffort": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    {
       "id": "qwen3.6-plus",
       "name": "Qwen3.6 Plus",
       "url": "https://opencode.ai/zen/go/v1",
