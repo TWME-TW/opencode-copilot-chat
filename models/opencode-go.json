@@ -64,8 +64,8 @@
       "maxOutputTokens": 128000
     },
     {
-      "id": "grok-4.6",
-      "name": "Grok 4.6",
+      "id": "grok-4.5",
+      "name": "Grok 4.5",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "chat-completions",
       "toolCalling": true,
@@ -76,8 +76,7 @@
       "supportsReasoningEffort": [
         "low",
         "medium",
-        "high",
-        "xhigh"
+        "high"
       ]
     },
     {
