@@ -467,22 +467,6 @@
       ]
     },
     {
-      "id": "x-preview-f-free",
-      "name": "Ox Alpha Free (Unlimited)",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": true,
-      "thinking": true,
-      "maxInputTokens": 1000000,
-      "maxOutputTokens": 131072,
-      "supportsReasoningEffort": [
-        "low",
-        "high",
-        "max"
-      ]
-    },
-    {
       "id": "gpt-5.2",
       "name": "GPT-5.2",
       "url": "https://opencode.ai/zen/v1",
