@@ -153,7 +153,12 @@
         "vision": true,
         "thinking": true,
         "maxInputTokens": 1000000,
-        "maxOutputTokens": 131072
+        "maxOutputTokens": 131072,
+        "supportsReasoningEffort": [
+          "low",
+          "medium",
+          "xhigh"
+        ]
       },
       {
         "id": "qwen3.7-plus",
@@ -177,8 +182,9 @@
         "maxInputTokens": 1000000,
         "maxOutputTokens": 131072,
         "supportsReasoningEffort": [
-          "high",
-          "max"
+          "low",
+          "medium",
+          "xhigh"
         ]
       },
       {
@@ -238,6 +244,21 @@
         "thinking": true,
         "maxInputTokens": 1000000,
         "maxOutputTokens": 65536
+      },
+      {
+        "id": "hy4-preview",
+        "name": "Hy4 preview",
+        "url": "https://opencode.ai/zen/go/v1",
+        "apiType": "chat-completions",
+        "toolCalling": true,
+        "vision": false,
+        "thinking": true,
+        "maxInputTokens": 1024000,
+        "maxOutputTokens": 64000,
+        "supportsReasoningEffort": [
+          "none",
+          "high"
+        ]
       },
       {
         "id": "glm-5.1",
@@ -669,6 +690,22 @@
         "thinking": true,
         "maxInputTokens": 400000,
         "maxOutputTokens": 128000,
+        "supportsReasoningEffort": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      {
+        "id": "ling-3.0-flash-fin-free",
+        "name": "Ling 3.0 Flash Fin Free",
+        "url": "https://opencode.ai/zen/v1",
+        "apiType": "chat-completions",
+        "toolCalling": true,
+        "vision": false,
+        "thinking": true,
+        "maxInputTokens": 262144,
+        "maxOutputTokens": 32768,
         "supportsReasoningEffort": [
           "low",
           "medium",
