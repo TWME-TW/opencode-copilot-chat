@@ -23,22 +23,6 @@
       "maxOutputTokens": 128000
     },
     {
-      "id": "ling-3.0-flash-fin-free",
-      "name": "Ling 3.0 Flash Fin Free",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 262144,
-      "maxOutputTokens": 32768,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "high"
-      ]
-    },
-    {
       "id": "hy3-free",
       "name": "Hy3 Free",
       "url": "https://opencode.ai/zen/v1",
