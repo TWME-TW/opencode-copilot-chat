@@ -149,12 +149,7 @@
       "vision": true,
       "thinking": true,
       "maxInputTokens": 1000000,
-      "maxOutputTokens": 131072,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "xhigh"
-      ]
+      "maxOutputTokens": 131072
     },
     {
       "id": "qwen3.7-plus",
@@ -166,22 +161,6 @@
       "thinking": true,
       "maxInputTokens": 1000000,
       "maxOutputTokens": 65536
-    },
-    {
-      "id": "qwen3.8-flash",
-      "name": "Qwen3.8 Flash",
-      "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "messages",
-      "toolCalling": true,
-      "vision": true,
-      "thinking": true,
-      "maxInputTokens": 1000000,
-      "maxOutputTokens": 131072,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "xhigh"
-      ]
     },
     {
       "id": "glm-5.3",
@@ -242,21 +221,6 @@
       "maxOutputTokens": 65536
     },
     {
-      "id": "hy4-preview",
-      "name": "Hy4 preview",
-      "url": "https://opencode.ai/zen/go/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 1024000,
-      "maxOutputTokens": 64000,
-      "supportsReasoningEffort": [
-        "none",
-        "high"
-      ]
-    },
-    {
       "id": "glm-5.1",
       "name": "GLM-5.1",
       "url": "https://opencode.ai/zen/go/v1",
@@ -280,7 +244,7 @@
     },
     {
       "id": "hy3",
-      "name": "Hy3",
+      "name": "Hy3 (8x usage)",
       "url": "https://opencode.ai/zen/go/v1",
       "apiType": "chat-completions",
       "toolCalling": true,
@@ -686,22 +650,6 @@
       ]
     },
     {
-      "id": "ling-3.0-flash-fin-free",
-      "name": "Ling 3.0 Flash Fin Free",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 262144,
-      "maxOutputTokens": 32768,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "high"
-      ]
-    },
-    {
       "id": "gpt-5.6-luna",
       "name": "GPT-5.6 Luna",
       "url": "https://opencode.ai/zen/v1",
@@ -752,6 +700,22 @@
       "thinking": true,
       "maxInputTokens": 204800,
       "maxOutputTokens": 131072
+    },
+    {
+      "id": "hy3-free",
+      "name": "Hy3 Free",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": false,
+      "thinking": true,
+      "maxInputTokens": 190000,
+      "maxOutputTokens": 64000,
+      "supportsReasoningEffort": [
+        "low",
+        "medium",
+        "high"
+      ]
     },
     {
       "id": "gpt-5.3-codex",

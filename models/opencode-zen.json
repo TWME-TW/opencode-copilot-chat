@@ -331,22 +331,6 @@
       ]
     },
     {
-      "id": "ling-3.0-flash-fin-free",
-      "name": "Ling 3.0 Flash Fin Free",
-      "url": "https://opencode.ai/zen/v1",
-      "apiType": "chat-completions",
-      "toolCalling": true,
-      "vision": false,
-      "thinking": true,
-      "maxInputTokens": 262144,
-      "maxOutputTokens": 32768,
-      "supportsReasoningEffort": [
-        "low",
-        "medium",
-        "high"
-      ]
-    },
-    {
       "id": "gpt-5.6-luna",
       "name": "GPT-5.6 Luna",
       "url": "https://opencode.ai/zen/v1",
@@ -397,6 +381,22 @@
       "thinking": true,
       "maxInputTokens": 204800,
       "maxOutputTokens": 131072
+    },
+    {
+      "id": "hy3-free",
+      "name": "Hy3 Free",
+      "url": "https://opencode.ai/zen/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": false,
+      "thinking": true,
+      "maxInputTokens": 190000,
+      "maxOutputTokens": 64000,
+      "supportsReasoningEffort": [
+        "low",
+        "medium",
+        "high"
+      ]
     },
     {
       "id": "gpt-5.3-codex",
