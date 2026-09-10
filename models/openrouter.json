@@ -2980,6 +2980,23 @@
       "tooltip": "Price Per 1M token -- Input 0.088606$, Output 0.177212$, Cache 0.017721$"
     },
     {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "url": "https://openrouter.ai/api/v1",
+      "apiType": "chat-completions",
+      "toolCalling": true,
+      "vision": true,
+      "thinking": true,
+      "maxInputTokens": 1048576,
+      "maxOutputTokens": 384000,
+      "supportsReasoningEffort": [
+        "low",
+        "high",
+        "max"
+      ],
+      "tooltip": "Price Per 1M token -- Input 0.3$, Output 1.2$, Cache 0.006$"
+    },
+    {
       "id": "deepseek/deepseek-r1",
       "name": "DeepSeek-R1",
       "url": "https://openrouter.ai/api/v1",
@@ -4599,7 +4616,7 @@
         "high",
         "max"
       ],
-      "tooltip": "Price Per 1M token -- Input 0.07$, Output 0.2333$, Cache 0.014$"
+      "tooltip": "Price Per 1M token -- Input 0.075$, Output 0.25$, Cache 0.015$"
     },
     {
       "id": "~z-ai/glm-latest",
@@ -4616,7 +4633,7 @@
         "high",
         "max"
       ],
-      "tooltip": "Price Per 1M token -- Input 1.113$, Output 3.498$, Cache 0.2067$"
+      "tooltip": "Price Per 1M token -- Input 1.085$, Output 3.41$, Cache 0.2015$"
     },
     {
       "id": "moonshotai/kimi-k2-0905",
@@ -5034,7 +5051,7 @@
         "high",
         "max"
       ],
-      "tooltip": "Price Per 1M token -- Input 0.07$, Output 0.2333$, Cache 0.014$"
+      "tooltip": "Price Per 1M token -- Input 0.075$, Output 0.25$, Cache 0.015$"
     },
     {
       "id": "z-ai/glm-4.5",
